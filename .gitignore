@@ -8,3 +8,6 @@
 *.log
 /chaindata
 /build
+/build_webpack
+/node_modules
+/web/dist

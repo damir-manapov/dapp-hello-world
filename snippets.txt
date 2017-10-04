@@ -3,10 +3,12 @@
         web3.personal.newAccount("passphrase");
     Permanent unlock account
         web3.personal.unlockAccount("address", "passphrase", 0);
+        web3.personal.unlockAccount(eth.coinbase, "passphrase", 0);
 
     Geth
         miner.start(3)
         eth.accounts
         miner.setEtherbase(eth.accounts[0])
-        eth.getBalance(eth.coinbase).toNumber();
+        eth.getBalance(eth.coinbase)
+        eth.getBalance(eth.accounts[0])
         eth.coinbase
